@@ -9,8 +9,8 @@ fi
 
 # help
 function help {
-    echo "Usage: ./vlan-man.sh [add/remove] [interface] [vlan id]"
-    echo "Example: ./vlan-man.sh add eth1 220"
+    echo "Usage: ./autovlan.sh [add/remove] [interface] [vlan id]"
+    echo "Example: ./autovlan.sh add eth1 220"
     interfaces=$(ip --br a | awk '{ print $1 }')
     echo "interfaces currenly available:"
     echo "$interfaces"
