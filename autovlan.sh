@@ -37,7 +37,7 @@ function addVlan {
     ip link add link ${interface} name "${interface}.${vlan}" type vlan id ${vlan}
     # Bring up vlan interface
     ip link set dev "${interface}.${vlan}"
-    echo "Added VLAN interface ${interface}.${vlan}@${interface}"
+    echo "Added VLAN interface ${interface}.${vlan}@${interface} up"
 }
 
 function removeVlan {
